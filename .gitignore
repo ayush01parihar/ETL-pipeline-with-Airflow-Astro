@@ -1,0 +1,45 @@
+# .git
+# .env
+# .DS_Store
+# airflow_settings.yaml
+# __pycache__/
+# astro
+# .venv
+# airflow-webserver.pid
+# webserver_config.py
+# airflow.cfg
+# airflow.db
+
+# Python cache & build
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Airflow
+logs/                        # Airflow execution logs
+airflow_settings.yaml        # contains exported connections/variables (secrets!)
+
+# Docker / Astro
+.astro/                      # Astro runtime cache
+.dockerignore
+docker-compose.override.yml  # local overrides only
+.env                         # secrets (never commit this!)
+
+# Database & local volumes
+postgres_data/               # Postgres volume
+*.db
+*.sqlite
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
